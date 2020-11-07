@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Learn more about your favorite Rick and Morty characters. Who's alive, what's their location, and who's on the run?">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Character Details</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Sigmar+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="flexbox-header">
+                <a href="index.html" class="logo">RM</a>
+                <nav>
+                    <label for="menu-box">
+                        <div class="hamburger-menu">
+                            <div class="top"></div>
+                            <div class="mid"></div>
+                            <div class="bot"></div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="menu-box">
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="detailsH1"></div>
+            <div class="detailsContainer">
+                <div class="loader"></div>
+            </div>    
+            <div class="breadcrumb"></div>
+        </main>
+        <footer>
+            <p>Thanks for checking out our Rick and Morty Characters gallery!</p>
+            <a href="index.html" class="footerLogo">RM</a>
+            <div class="footerLinks">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </footer>
+        <script src="js/components/errorMessage.js"></script>
+        <script src="js/detail.js"></script>
+    </body>
+</html>
+

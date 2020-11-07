@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Love or hate our Rick and Morty Characters gallery? Get in touch! We'd love to hear your thoughts.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Sigmar+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="flexbox-header">
+                <a href="index.html" class="logo">RM</a>
+                <nav>
+                    <label for="menu-box">
+                        <div class="hamburger-menu">
+                            <div class="top"></div>
+                            <div class="mid"></div>
+                            <div class="bot"></div>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="menu-box">
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Contact</h1>
+            <div class="detailsContainer">
+                <form id="contactForm">
+                    <div>
+                        <label>Name*
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <div class="formError" id="nameError">Please enter your name.</div>
+                    </div>
+                    <div>
+                        <label>Subject*
+                                <textarea name="requests" id="subject"></textarea>
+                        </label> 
+                        <div class="formError" id="subjectError">The subject must contain at least 10 characters.</div>
+                    </div>
+                    <div>
+                        <label>Email*
+                            <input name="email" id="email">
+                        </label>
+                        <div class="formError" id="emailError">Please enter a valid email address.</div>
+                    </div>
+                    <div>
+                        <label>Address*
+                            <input type="text" name="address" id="address">
+                        </label>
+                        <div class="formError" id="addressError">Please enter an address that contains at least 25 characters.</div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div class="breadcrumb"></div>
+        </main>
+        <footer>
+            <p>Thanks for checking out our Rick and Morty Characters gallery!</p>
+            <a href="index.html" class="footerLogo">RM</a>
+            <div class="footerLinks">
+                <a href="index.html">Home</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </footer>
+        <script src="js/components/errorMessage.js"></script>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
+
